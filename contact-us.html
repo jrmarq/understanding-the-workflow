@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Fill out the form below to get in touch.</p>
+  </header>
+
+  <!-- Main Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">About Us</a></li>
+      <li><a href="index.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <form name="contactForm" method="POST" action="success.html">
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <!-- Single Line Text Entry -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <!-- Multi-line Text Entry -->
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+          <!-- Radio Buttons -->
+          <fieldset>
+            <legend>Preferred Contact Method:</legend>
+            <label>
+              <input type="radio" name="contactMethod" value="email" required>
+              Email
+            </label>
+            <label>
+              <input type="radio" name="contactMethod" value="phone">
+              Phone
+            </label>
+          </fieldset><br>
+
+          <!-- Checkboxes -->
+          <fieldset>
+            <legend>Topics of Interest:</legend>
+            <label>
+              <input type="checkbox" name="topic" value="webDevelopment">
+              Web Development
+            </label>
+            <label>
+              <input type="checkbox" name="topic" value="alanTuring">
+              Alan Turing's Legacy
+            </label>
+          </fieldset><br>
+
+          <!-- Drop-down Menu -->
+          <label for="urgency">How soon do you need a response?</label>
+          <select id="urgency" name="urgency" required>
+            <option value="1day">Within 1 Day</option>
+            <option value="3days">Within 3 Days</option>
+            <option value="week">Within a Week</option>
+          </select><br><br>
+
+          <!-- Submit and Reset Buttons -->
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 My Home Page. All Rights Reserved.</p>
+    <p><a href="mailto:webmaster@example.com">Contact Webmaster</a></p>
+  </footer>
+
+</body>
+</html>
